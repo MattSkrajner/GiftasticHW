@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Baseball Gif Producer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+
+    <body="wholeThing">
+
+        <h1>Baseball Gif Bonanza</h1>
+        <h4>Click the buttons to find gifs of baseball players. <br>The gifs start out still, but give them a click, and they'll start moving!<br>
+            Enter a new player into the search box and hit submit to add new buttons to the page!</h4>
+          
+          <form class="form-inline" id="playerSearch">
+            
+            <div class="form-group">
+              <label for="playerInput">Search for a Player</label>
+              <input type="text" id="playerInput">
+            </div>
+
+            <input id="addPlayer" type="submit" value="submit">
+          </form>
+          
+          <div class="row">
+                
+                <!-- pre existing buttons -->
+                <button class="btn btn-primary" id="player" data-search="Corey Kluber">Corey Kluber</button>
+                <button class="btn btn-primary" id="player" data-search="Ichiro">Ichiro</button>
+                <button class="btn btn-primary" id="player" data-search="Francisco Lindor">Francisco Lindor</button>
+                <button class="btn btn-primary" id="player" data-search="Mike Trout">Mike Trout</button>
+                
+                <!-- where the new buttons go after clicking submit -->
+                <div id="newButtons"></div>
+          </div> 
+          
+          <!-- where the gifs will display -->
+          <div class="row">
+            <div class="container">
+                <span><div id="gifDisplay"></div></span>
+            </div> 
+          </div> 
+
+<!-- Javascript source -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
